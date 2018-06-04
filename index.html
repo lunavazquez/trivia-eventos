@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart Trivia</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="app">
+    <header>
+      <h1>TRIVIA</h1>
+      <h2>
+        Bienvenid@
+        <span id="username"></span>
+      </h2>
+    </header>
+    <div id="question-user" class="question-user">
+      <p>C&uacute;al es tu nombre?</p>
+      <br>
+      <p>
+        <input id="input-username" type="text" placeholder="Escribe tu nombre">
+        <button id="btn-username" class="button success">Aceptar</button>
+      </p>
+    </div>
+    <div id="question-play" class="question-play none">
+      <p>Quieres jugar ahora?</p>
+      <br>
+      <p>
+        <button id="btn-play" class="button success">Si</button>
+        <button id="btn-noplay" class="button cancel">No</button>
+      </p>
+    </div>
+    <div id="questions" class="questions none">
+      <ul class="question">
+        <li>
+          <span>¿Quién descubrio america?</span>
+        </li>
+        <li>
+          <input type="radio" name="qone" value="cristobal" required>
+          <label for="qone">1) Cristóbal Colón</label>
+        </li>
+        <li>
+          <input type="radio" name="qone" value="hernan" required>
+          <label for="qone">2) Hernán Cortés</label>
+        </li>
+        <li>
+          <input type="radio" name="qone" value="diego" required>
+          <label for="qone">3) Diego Rivera</label>
+        </li>
+      </ul>
+      <br>
+      <ul class="question">
+        <li>
+          <span>¿A qué se dedica Stephen Hawking?</span>
+        </li>
+        <li>
+          <input type="radio" name="qtwo" value="music" required>
+          <label for="qtwo">1) Música</label>
+        </li>
+        <li>
+          <input type="radio" name="qtwo" value="futbol" required>
+          <label for="qtwo">2) Fútbol</label>
+        </li>
+        <li>
+          <input type="radio" name="qtwo" value="physical" required>
+          <label for="qtwo">3) Física</label>
+        </li>
+      </ul>
+      <br>
+      <ul class="question">
+        <li>
+          <span>¿Cuál es la capital de Francia?</span>
+        </li>
+        <li>
+          <input type="radio" name="qthree" value="paris" required>
+          <label for="qthree">1) París</label>
+        </li>
+        <li>
+          <input type="radio" name="qthree" value="cdmx" required>
+          <label for="qthree">2) CDMX</label>
+        </li>
+        <li>
+          <input type="radio" name="qthree" value="londres" required>
+          <label for="qthree">3) Londres</label>
+        </li>
+      </ul>
+      <br>
+      <input id="btn-question" type="button" value="Guardar" class="button success">
+    </div>
+    <article id="answers" class="none">
+      <div id="success" class="success"></div>
+      <div id="fail" class="fail"></div>
+    </article>
+    <article id="noplay" class="none">Jugaremos la próxima vez!!!</article>
+  </section>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

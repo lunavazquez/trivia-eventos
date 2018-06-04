@@ -1,0 +1,116 @@
+/* reset default browser styles */
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  z-index: 0;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+input[type="text"] {
+  border-bottom: 2px solid blueviolet;
+  color: blueviolet;
+  font-weight: 100;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button.success {
+  background: blueviolet;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 15px;
+  line-height: 10px;
+  min-width: 50px;
+}
+.button.cancel {
+  border: 1px solid blueviolet;
+  background: #fff;
+  color: blueviolet;
+  padding: 7px 10px;
+  border-radius: 15px;
+  line-height: 10px;
+  min-width: 50px;
+}
+
+/* header */
+header h1,
+header h2 {
+  font-size: 50px;
+  font-weight: 300;
+  padding: 0 5%;
+  text-align: center;
+}
+header h2 {
+  text-align: right;
+}
+header h2 span {
+  color: blueviolet;
+  font-size: 30px;
+}
+
+.question-user,
+.question-play {
+  color: blueviolet;
+  text-align: center;
+  width: 100%;
+}
+
+.questions {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.questions ul li span {
+  font-weight: 600;
+}
+
+.questions .button {
+  float: right;
+}
+
+#answers {
+  width: 600px;
+  margin: 0 auto;
+}
+
+div.success,
+div.fail {
+  display: inline-block;
+  line-height: 23px;
+  vertical-align: top;
+  width: 49%;
+}
+
+#answers p:first-child {
+  color: blueviolet;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+#answers p span {
+  color: blueviolet;
+  display: block;
+  text-indent: 10px;
+}
+
+#noplay {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: blueviolet;
+  line-height: 150px;
+}
